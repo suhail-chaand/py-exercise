@@ -1,1 +1,1 @@
-# py-training
+# py-exercise
