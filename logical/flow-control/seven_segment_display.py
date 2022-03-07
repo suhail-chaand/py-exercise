@@ -1,11 +1,9 @@
-"""Print the largest possible number numerically that can be 
-generated using at max that many number of matchsticks which 
-was used to generate N.
+"""HackerEarth - Seven-segment display
 https://www.hackerearth.com/practice/basic-programming/input-output/basics-of-input-output/practice-problems/algorithm/seven-segment-display-nov-easy-e7f87ce0/
 """
-t = int(input())
+t = int(input('Enter the number of test-cases: '))
 for _ in range(t):
-    n = list(map(int, input().strip()))
+    n = list(map(int, input('Enter the number: ').strip()))
     seg=0
     out=''
     for d in n:
@@ -25,4 +23,5 @@ for _ in range(t):
         while seg!=0:
             out+='1'
             seg-=2
-    print(out)
+    print('The largest possible number numerically that can be generated using at max \
+that many number of matchsticks which was used to generate {} : {}'.format(n,out))
